@@ -83,4 +83,4 @@ class ReadmeItem(pytest.Item):
 
     def reportinfo(self):
         """Report some basic information on the test outcome"""
-        return self.fspath, 0, "usecase: {}".format(self.name)
+        return self.fspath, 0, f"usecase: {self.name}"
